@@ -1,4 +1,3 @@
-"use strict";
 module.exports = (sequelize, DataTypes) => {
   const Todo = sequelize.define("Todo", {
     title: {
@@ -6,13 +5,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     }
   });
-  Todo.associate = function(models) {
-    // associations can be defined here
-    Todo.hasMany(models.TodoItem),
+  Todo.associate = (models) => {
+    Todo.hasMany(models.TodoItem,
       {
         foreignKey: "todoId",
         as: "todoItems"
-      };
+      });
   };
   return Todo;
 };
