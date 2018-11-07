@@ -1,2 +1,2 @@
 
-postgres://qecoqixi:93fXSMRnvpJl80M3NiDVuZV67vQygqir@dumbo.db.elephantsql.com:5432/qecoqixi
+SET DATABASE_URL = postgres://qecoqixi:93fXSMRnvpJl80M3NiDVuZV67vQygqir@dumbo.db.elephantsql.com:5432/qecoqixi
